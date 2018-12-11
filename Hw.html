@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="hw.css" type="text/css" media="screen"> 
+	<title>ИП Швецова Мария Валерьевна</title>
+	<style>
+		
+		@media screen and (max-width: 768px){}
+		@media screen and (max-width: 460px){}
+	</style>
+</head>
+<body>
+	<div class="info">
+		<div class="content">
+			Швецова Мария Валерьевна
+			<p class="phone">+79292194567, <a class="site" href="https://vk.com/">Страница вк</a>,
+			<a class="site" href="https://www.instagram.com/cozy_winter_snoods/">Перейти на сайт</a></p>
+		</div>
+		<img class="pay" src="cat1.jpg" alt="cat">
+	</div>
+
+	<ul class="pay-or-not">
+		<li class="choice">Заплатить</li>
+		<li class="choice">Запросить платеж</li>
+	</ul>
+
+	<ul class="how-to-pay">
+		<li class="choice">С карты любого банка</li>
+		<li class="choice">Из своего интернет-банка</li>
+	</ul>
+
+	<div class="payment">
+		<form class="from-card">
+			<ul class="card-data">
+				<li class="cd"><input class="input-cd", type="text" 
+					name="CardNumber" alt="Card" required placeholder="XXXX XXXX XXXX XXXX" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"></li>
+				<li class="cd"><input class="input-cd", type="text" 
+					name="CardDate" required placeholder="ММ/ГГ" pattern="[0-9]{2}/[0-9]{2}"></li>
+				<li class="cd"><input class="input-cd", type="text" 
+					name="CVC" required placeholder="XXX" pattern="[0-9]{3}"></li>
+			</ul>
+			<ul class="extra">
+				<label class="caption">Сумма<span class="colortext">*</span>:<br><input class="pay-data" 
+					type="text" name="sum" required placeholder="От 1000 до 75000"></label>
+				<label class="caption">Комментарий:<br><input class="pay-data" type="text" name="comment" 
+					maxlength="150" placeholder="До 150 символов"></label>
+				<label class="caption">Электронная почта:<br><input class="pay-data" type="email" name="post" 
+					placeholder="Ваша почта"></label>
+				<input class="button" type="submit" name="pay" value="Заплатить">
+			</ul>
+		</form>
+		<form class="from-internet-bank">
+			<p>Сформируйте платежку и загрузите ее в свой банк для подписи</p>
+			<div>
+				<label>От кого*:<br><input class="pay-data" type="text" name="from-who" placeholder="ИНН или название плательщика"></label>
+				<label>Номер счета*:<br><input class="pay-data" type="text" name="count-number"></label>
+				<label>За что:<br><input type="text" name="for" class="pay-data" placeholder="Назначение платежа">
+				<label>Сколько*:<br><input type="text" name="how-much" class="pay-data"></label>
+				<input class="button" type="submit" name="get-file" value="Получить файл для интернет-банка">
+				<input class="reset" type="reset" name="reset" value="Очистить форму">
+
+			</div>
+		</form>
+	</div>
+
+	<div class="ask-for-payment" id="afp">
+		<form class="ask-for-payment">
+			<p>Создайте платежку, а получатель подпишет ее у себя в интернет-банке</p>
+			<label>ИНН получателя*<br><input type="text" name="inn" class="payment-data" placeholder="ИНН или название получателя"></label>
+			<label>БИК<br><input type="text" name="bik" class="payment-data"></label>
+			<label>Номер счета*<br><input type="text" name="count-number" class="payment-data"></label>
+			<label>За что<br><input type="text" name="for" class="payment-data" placeholder="Назначение платежа"></label>
+			<label>Сколько*<br><input type="text" name="how-much" class="payment-data"></label>
+			<label>Номер телефона<br><input type="text" name="phone" class="payment-data" placeholder="+7"></label>
+			<p class="notification">Оставляя номер телефона, вы соглашаетесь на обработку персональных данных</p>
+			<label>Эл. почта<br><input type="email" name="post" class="payment-data" placeholder="Для уведомлений об оплате"></label>
+			<input class="button" type="submit" name="get-file" value="Создать платеж">
+			<input class="reset" type="reset" name="reset" value="Очистить форму">
+		</form>
+	</div>
+	
+	<div class="about-a-comp">
+		<p class="capt">О компании ИП Швецова Мария Валерьевна</p>
+		<div class="img_with_caption">
+			<figure class="about">
+				<img src="s1.jpg", alt="s1", class="sign"> 	
+				<figcaption>Комплект шарф+снуд 1700р</figcaption>
+			</figure>
+			<figure class="about">
+				<img src="s2.jpg", alt="s3", class="sign">
+				<figcaption>Шапка 850р</figcaption>
+			</figure>
+			<figure class="about">
+				<img src="s3.jpg", alt="s3", class="sign">
+				<figcaption>Снуд 1100р</figcaption>
+			</figure>
+		</div>
+	</div>
+	
+	<footer>
+		<a class="footer", href="https://vk.com/"><img class="footer", src="vk.jpg" alt="vk"></a>
+		<a class="footer", href="https://www.instagram.com/"><img class="footer", src="insta.jpg" alt="insta"></a>
+		<a class="footer", href="https://pinterest.com/"><img class="footer", src="pint.jpg" alt="pint"></a>
+		<a class="footer", href="https://facebook.com/"><img class="footer", src="fb.jpg" alt="fb"></a>
+		<a class="footer", href="https://twitter.com/"><img class="footer", src="tw.jpg" alt="tw"></a>
+		<a class="footer", href="https://youtube.com/"><img class="footer", src="yt.jpg" alt="yt"></a>
+		<a class="footer", href="https://web.telegram.org/"><img class="footer", src="tg.jpg" alt="tg"></a>
+	</footer>
+
+
+</body>
+</html>
